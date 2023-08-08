@@ -1,0 +1,1 @@
+let currentSlide = 0;

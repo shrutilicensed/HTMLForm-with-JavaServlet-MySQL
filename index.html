@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Student Form</title>
+  </head>
+  <body>
+    <form class="form-container">
+      <h3 class="form-heading">Create Account</h3>
+      <!-- TAB 1 -->
+      <div class="tab personal-info-tab">
+        <div class="question-container">
+          <label>First Name</label>
+          <input type="text" />
+        </div>
+
+        <div class="question-container">
+          <label>Last Name</label>
+          <input type="text" />
+        </div>
+
+        <div class="question-container">
+          <label>Email Address</label>
+          <input type="text" />
+        </div>
+
+        <div class="question-container">
+          <label>Phone Number</label>
+          <input type="number" />
+        </div>
+
+        <div class="question-container">
+          <label>Address</label>
+          <input type="text" />
+        </div>
+
+        <div class="question-container">
+          <label>Date Of Birth</label>
+          <input type="date" />
+        </div>
+      </div>
+
+      <!-- TAB 2 -->
+      <div class="tab account-info-tab active">
+        <div class="question-container">
+          <label>Create a username</label>
+          <input type="text" />
+        </div>
+        <div class="question-container">
+          <label>Create password</label>
+          <input type="password" />
+        </div>
+
+        <div class="question-container">
+          <label>Confirm Password</label>
+          <input type="password" />
+        </div>
+      </div>
+
+      <!-- TAB 3 -->
+      <div class="tab course-info-tab">
+        <div class="language-container">
+          <div class="question-container">
+            <label>Programming Language :</label>
+            <select>
+              <option value="" disabled="disabled" selected="true">
+                Choose Programming Language
+              </option>
+              <option value="C++">C++</option>
+              <option value="Java">Java</option>
+              <option value="Python">Python</option>
+            </select>
+          </div>
+
+          <div class="question-container">
+            <label>Foreign Language: </label>
+            <select>
+              <option value="" disabled="disabled" selected="true">
+                Choose Language
+              </option>
+              <option value="Japanese">Japanese</option>
+              <option value="German">German</option>
+              <option value="French">French</option>
+              <option value="Spanish">Spanish</option>
+              <option value="Advance English">Advance English</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="question-container">
+          <label> Domain (max: three) </label>
+          <div class="domain-container">
+            <div class="checkbox-container">
+              <input type="checkbox" /> <label>Web Development</label>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" /> <label>Android Development</label>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" /> <label>UI/UX Design</label>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" /> <label> Cyber Security</label>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" /> <label> AI/ML</label>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" /><label> Cloud Security</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BUTTONS -->
+      <footer>
+        <button class="previous-button">Previous</button>
+        <!-- PROGRESSION-DOTS -->
+        <div class="step-dots">
+          <span class="step active-step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+        </div>
+        <button class="next-button">Next</button>
+      </footer>
+    </form>
+  </body>
+</html>

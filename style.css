@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Poppins:ital,wght@0,200;0,400;0,500;1,400;1,500&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #c0e1ff;
+  --secondary-color: #091f33;
+  --tertiary-color: #3a4c5c;
+  --button-text-color: #ffffff;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-family: "Poppins", sans-serif;
+  color: var(--secondary-color);
+  font-size: 1rem;
+}
+
+.form-heading {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.form-container {
+  max-width: 40rem;
+  margin: 3rem auto;
+  border-radius: 2.5rem;
+  padding: 2rem 4rem 4rem 4rem;
+  background-color: var(--primary-color);
+}
+
+input {
+  height: 2rem;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.8rem;
+  font-weight: 500;
+  font-family: inherit;
+  color: var(--tertiary-color);
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  outline: none;
+}
+
+input:focus {
+  border: 0.1rem solid var(--secondary-color);
+}
+
+label {
+  margin-left: 0.8rem;
+  font-weight: 500;
+}
+
+.question-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.tab {
+  display: none;
+}
+
+.active {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  font-size: 1rem;
+  padding: 0.7rem 1rem;
+  background-color: var(--secondary-color);
+  color: var(--button-text-color);
+  border: none;
+  border-radius: 1.4rem;
+}
+
+.step-dots {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.step {
+  width: 0.7rem;
+  height: 0.7rem;
+  background-color: var(--tertiary-color);
+  border-radius: 10rem;
+}
+
+.active-step {
+  background-color: var(--secondary-color);
+}
+
+/* FORM THREE */
+
+.language-container {
+  display: flex;
+  gap: 3rem;
+}
+
+.domain-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.2rem 3rem;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+select {
+  height: 2.4rem;
+  width: 15rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 1rem;
+}
+
+option {
+  height: 2.4rem;
+}
+
+select-focus {
+  background-color: var(--secondary-color);
+}
